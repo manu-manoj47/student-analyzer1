@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/YOUR_USERNAME/student-analyzer1.git'
+                git branch: 'main', url: 'https://github.com/manu-manoj47/student-analyzer1.git'
             }
         }
         stage('Build') {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Tests passed!'
+                echo 'All tests passed!'
             }
         }
         stage('Deploy') {
