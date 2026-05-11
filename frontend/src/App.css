@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #09090f;
+  --surface: #111120;
+  --surface2: #1a1a2e;
+  --border: rgba(255,255,255,0.07);
+  --accent: #7c6af7;
+  --accent2: #f7756c;
+  --accent3: #4fd1c5;
+  --text: #f0f0f8;
+  --muted: #6b6b8a;
+  --success: #4ade80;
+  --warning: #fbbf24;
+}
+
+html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; }
+
+h1, h2, h3, h4 { font-family: 'Syne', sans-serif; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+
+input, select, textarea {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 12px 16px;
+  width: 100%;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s;
+}
+input:focus, select:focus, textarea:focus { border-color: var(--accent); }
+select option { background: var(--surface2); }
+
+button { font-family: 'Syne', sans-serif; cursor: pointer; border: none; outline: none; }
